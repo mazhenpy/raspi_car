@@ -12,14 +12,14 @@ $(function(){
      })
   });
 
-// W
+// UP
 $(document).keydown(function(e){
-    if (e.keyCode == 87) //w
+    if (e.keyCode == 38) //up
     {
         $.ajax({
         type:"GET",
-        url:"/motor",
-        data:{'requ_type':'w_down'},
+        url:"/servo",
+        data:{'requ_type':'up_down'},
         dataType:"text",
         success: function(data) {
 		// alert(data)
@@ -29,12 +29,12 @@ $(document).keydown(function(e){
 });
 
 $(document).keyup(function(e){
-    if (e.keyCode == 87) //w
+    if (e.keyCode == 38) //up
     {
         $.ajax({
         type:"GET",
-        url:"/motor",
-        data:{'requ_type':'w_up'},
+        url:"/servo",
+        data:{'requ_type':'up_up'},
         dataType:"text",
         success: function(data) {
 		// alert(data)
@@ -43,14 +43,14 @@ $(document).keyup(function(e){
     }
 });
 
-//A
+//DOWN
 $(document).keydown(function(e){
-    if (e.keyCode == 65) //w
+    if (e.keyCode == 40) // down
     {
         $.ajax({
         type:"GET",
-        url:"/motor",
-        data:{'requ_type':'a_down'},
+        url:"/servo",
+        data:{'requ_type':'down_down'},
         dataType:"text",
         success: function(data) {
 		// alert(data)
@@ -60,12 +60,12 @@ $(document).keydown(function(e){
 });
 
 $(document).keyup(function(e){
-    if (e.keyCode == 65) //w
+    if (e.keyCode == 40) // down
     {
         $.ajax({
         type:"GET",
-        url:"/motor",
-        data:{'requ_type':'a_up'},
+        url:"/servo",
+        data:{'requ_type':'down_up'},
         dataType:"text",
         success: function(data) {
 		// alert(data)
@@ -74,14 +74,14 @@ $(document).keyup(function(e){
     }
 });
 
-//S
+//LEFT
 $(document).keydown(function(e){
-    if (e.keyCode == 83) //w
+    if (e.keyCode == 37) // left
     {
         $.ajax({
         type:"GET",
-        url:"/motor",
-        data:{'requ_type':'s_down'},
+        url:"/servo",
+        data:{'requ_type':'left_down'},
         dataType:"text",
         success: function(data) {
 		// alert(data)
@@ -91,12 +91,12 @@ $(document).keydown(function(e){
 });
 
 $(document).keyup(function(e){
-    if (e.keyCode == 83) //w
+    if (e.keyCode == 37) // left
     {
         $.ajax({
         type:"GET",
-        url:"/motor",
-        data:{'requ_type':'s_up'},
+        url:"/servo",
+        data:{'requ_type':'left_up'},
         dataType:"text",
         success: function(data) {
 		// alert(data)
@@ -105,14 +105,14 @@ $(document).keyup(function(e){
     }
 });
 
-//D
+//RIGHT
 $(document).keydown(function(e){
-    if (e.keyCode == 68) //w
+    if (e.keyCode == 39) // right
     {
         $.ajax({
         type:"GET",
-        url:"/motor",
-        data:{'requ_type':'d_down'},
+        url:"/servo",
+        data:{'requ_type':'right_down'},
         dataType:"text",
         success: function(data) {
 		// alert(data)
@@ -122,12 +122,12 @@ $(document).keydown(function(e){
 });
 
 $(document).keyup(function(e){
-    if (e.keyCode == 68) //w
+    if (e.keyCode == 39) // right
     {
         $.ajax({
         type:"GET",
-        url:"/motor",
-        data:{'requ_type':'d_up'},
+        url:"/servo",
+        data:{'requ_type':'right_up'},
         dataType:"text",
         success: function(data) {
 		// alert(data)
@@ -135,13 +135,3 @@ $(document).keyup(function(e){
       });
     }
 });
-
-
-
-//
-//
-//  $(document).keydown(function(event){
-//
-//   alert(event.keyCode);
-//
-// });

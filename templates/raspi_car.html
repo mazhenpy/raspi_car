@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css"/>
     <script type="text/javascript" src="/static/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="/static/js/motor.js"></script>
+    <script type="text/javascript" src="/static/js/servo.js"></script>
 
 </head>
 <body>
-    <button type="button" class="btn btn-primary" id="forward">Forward</button>
+    <!--<button type="button" class="btn btn-primary" id="forward">Forward</button>-->
+    <div class="container">
+        <div class="med" style="width: 800px; height: 400px; margin: auto;">
+            <video class="video-js" controls preload="auto" poster="" data-setup="{'example_option':true}" style="width: 800px; height: 400px;">
+                        <source src="http://pyworm-video.oss-cn-hangzhou.aliyuncs.com/Arthas1.mp4"
+                                media="only screen and (min-device-width: 500px)">
+            </video>
+        </div>
+    </div>
 </body>
 </html>
+
